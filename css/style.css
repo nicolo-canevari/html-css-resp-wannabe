@@ -130,30 +130,33 @@ img {
 
  /* versione tablet */
 
- @media screen and (min-width: 768px) {
-    
+ @media screen and (max-width: 768px) {
+
     .container {
-        width: 90%; 
-        padding: 0 10px; 
+       width: 100%;
+       justify-content: center;
     }
-
    
-    .lessons .col {
-        width: 100%; 
-    }
-
-   
-    .steps .col {
-        width: 100%; 
-    }
-
-    
-    .why-us .col-left,
-    .why-us .col-right {
-        width: 100%; 
-    }
 }
 
 
 /* versione mobile */
 
+@media screen and (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+    
+   
+
+}
+
+   
